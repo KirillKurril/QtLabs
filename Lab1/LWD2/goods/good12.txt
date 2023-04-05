@@ -1,0 +1,6 @@
+ROM
+Seagate Technology LLC
+Seagate BarraCuda 1TB
+Drive type: HDD; Volume: 1 TB;
+128,00
+8

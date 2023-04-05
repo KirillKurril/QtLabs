@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>121</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>a/(b-c)*(d+e)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>(a+b)*(c-d)/e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a-(b+c*d)/e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a/b-((c+d)*e)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a*(b-c+d)/e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>(a+b)*(c-d)/e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a*(b-c)/(d+e)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a/(b*(c+d))-e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>(a+(b/c-d))*e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a*(b+c)/(d-e)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a-(b/c*(d+e))</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>(a-b)/(c+d)*e</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a/(b+c-d*e)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a*(b-c)/(d+e)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>(a+b*c)/(d-e)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="formulaLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Выбор существующего выражения:</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>70</y>
+      <width>350</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="variableLabelA">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>a =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="variableLabelB">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>10</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>b =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="variableLabelC">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>c =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="variableLabelD">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>d =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="variableLabelE">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>10</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>e =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="formulaLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ввод собственного выражения:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="formulaEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>70</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ответ:</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="variableEditA">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="variableEditB">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="variableEditC">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="variableEditD">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="variableEditE">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="evaluate1">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рассчитать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="evaluate2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рассчитать</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+power unit
+Listan GMBH Company KG.
+be quiet! System Power 9
+Power: 800 W; efficiency: 85%  (at 50% load); Power supply standard ATX12V 2.4;
+173,24
+23

@@ -1,0 +1,6 @@
+motherboard
+Micro-Star International
+MSI MAG B550 Tomahawk
+processor support: AMD, socket: AM4, memory type: DDR4;
+630,00
+9

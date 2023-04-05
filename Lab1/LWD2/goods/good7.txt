@@ -1,0 +1,6 @@
+RAM
+Kingston Technology Company
+RAM Kingston FURY Beast 2x8GB
+kit: 2; the volume of one module: 16 GB; clock 3200 MHz;
+160,27
+12

@@ -1,0 +1,6 @@
+motherboard
+Asrock INC
+ASRock B660M Pro RS
+processor support: Intel, socket: LGA1700, memory type: DDR4;
+423,56
+12

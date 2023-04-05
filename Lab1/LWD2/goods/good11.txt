@@ -1,0 +1,6 @@
+ROM
+Western Digital Technologies
+WD Blue 6TB WD60EZAZ
+Drive type: HDD; Volume: 6 TB;
+357,30
+12

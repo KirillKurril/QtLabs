@@ -1,0 +1,6 @@
+motherboard
+Gigabyte Technology Company
+Gigabyte B450M H (rev. 1.0)
+processor support: AMD, socket: AM4, memory type: DDR4;
+302,33
+18

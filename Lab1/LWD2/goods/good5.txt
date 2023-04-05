@@ -1,0 +1,6 @@
+processor
+Advanced Micro Devices
+AMD Ryzen 5 5600X
+Number of Cores: 6; Base clock: 3.7 GHz; L2 cache 3 MB;
+509,20
+13

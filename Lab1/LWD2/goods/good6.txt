@@ -1,0 +1,6 @@
+processor
+Advanced Micro Devices
+AMD Ryzen 7 5700G
+Number of Cores: 8; Base clock: 3.8 GHz; L2 cache 4 MB;
+643,97
+7

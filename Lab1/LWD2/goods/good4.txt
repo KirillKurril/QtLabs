@@ -1,0 +1,6 @@
+processor
+Intel Corporation
+Intel Core i5-12400F
+Number of Cores: 6; Base clock: 2.5 GHz; L2 cache 7.5 MB;
+506,90
+11

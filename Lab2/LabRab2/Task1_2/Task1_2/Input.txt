@@ -1,0 +1,6 @@
+110 Irina*Sapronenko Slava*Sapronenko 21.05.2005 Irina*Sapronenko 17
+111 Robert*Lafore Object-Oriented*Programming*in*C++ 08.03.2015 izdatelstvo 9999
+112 Who*Am*I? 15*rubley 12.04.1999 Kasyan 445
+113 asdfas asdfasdf 01.01.2001 asdfadsfa 1
+114 Aliaksandr*Meshok POIT*GAVNO 06.03.2023 POIT 43
+115 Aliaksandr*Meshok 15*rubley 21.05.2005 asdfadsfa 9999

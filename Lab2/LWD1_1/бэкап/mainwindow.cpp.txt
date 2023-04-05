@@ -1,0 +1,134 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+
+void MainWindow::updateTable()
+{
+    ui->tableWidget->setRowCount(timeTable.getSize());
+    qDebug() << timeTable.getSize();
+    for (int i = 0; i < timeTable.getSize(); i++)
+    {
+        ui->tableWidget->setItem(i, 0, new QTableWidgetItem(timeTable[i].getNumber()));
+         qDebug() << timeTable[i].getNumber();
+        ui->tableWidget->setItem(i, 1, new QTableWidgetItem(timeTable[i].getTime()));
+         qDebug() << timeTable[i].getTime();
+        ui->tableWidget->setItem(i, 2, new QTableWidgetItem(timeTable[i].getModel()));
+         qDebug() << timeTable[i].getModel();
+        ui->tableWidget->setItem(i, 3, new QTableWidgetItem(timeTable[i].getDestination()));
+         qDebug() << timeTable[i].getDestination();
+    }
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    open_file(timeTable, fileName);
+    updateTable();
+}
+
+void MainWindow::open_file(List &timeTable, QString& fileName)
+{
+        fileName = QFileDialog::getOpenFileName();
+        QFile file (fileName);
+        if (file.open(QIODevice::ReadWrite | QIODevice::Append | QIODevice::Text))
+        {
+            qDebug() << "File is successfully open!\n";
+        QTextStream counter(&file);
+        counter.seek(0);
+        int i = 0;
+        while(!counter.atEnd())
+        {
+            Flight temp;
+            QString str;
+            str = counter.readLine();
+            //qDebug() << str;
+            temp.setNumber(str);
+            str = counter.readLine();
+            //qDebug() << str;
+            QTime tim = QTime::fromString(str, "hh:mm");
+            if(tim.isValid())
+            {
+            temp.setTime(str);
+            str = counter.readLine();
+            //qDebug() << str;
+            temp.setModel(str);
+            str = counter.readLine();
+            //qDebug() << str;
+            temp.setDestination(str);
+
+            timeTable.add(temp);
+            //qDebug() << temp.getNumber() << " " << timeTable[i].getNumber() << "\n";
+            //qDebug() << temp.getTime() << " " << timeTable[i].getTime() << "\n";
+            //qDebug() << temp.getModel() << " " << timeTable[i].getModel() << "\n";
+            //qDebug() << temp.getDestination() << " " << timeTable[i].getDestination() << "\n";
+            i++;
+            }
+
+            else
+            {
+                QMessageBox::warning(Q_NULLPTR,"Warning", "File containes incorrect data!");
+                break;
+            }
+        }
+        file.close();
+        }
+        else
+        {
+            qDebug() << "File isn't open!\n";
+        }
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    QFile file (fileName);
+    if (file.open(QIODevice::ReadWrite | QIODevice::Append | QIODevice::Text))
+    {
+        qDebug() << "File is successfully open!\n";
+        QTextStream ptr(&file);
+        ptr.seek(-1);
+
+        Flight temp;
+        QString str;
+        str =ui->lineEdit_4->text();
+        temp.setNumber(str);
+        ptr << str << '\n';
+        str =ui->lineEdit_5->text();
+        QTime tim = QTime::fromString(str, "hh:mm");
+        if(tim.isValid())
+        {
+        temp.setTime(str);
+        ptr << str << '\n';
+        str =ui->lineEdit_6->text();
+        temp.setModel(str);
+        ptr << str << '\n';
+        str =ui->lineEdit_7->text();
+        temp.setDestination(str);
+        ptr << str << '\n';
+
+        timeTable.add(temp);
+        updateTable();
+        file.close();
+        }
+        else
+        {
+            QMessageBox::warning(Q_NULLPTR,"Warning", "File containes incorrect data!");
+        }
+    }
+    else
+    {
+        qDebug() << "File isn't open!\n";
+    }
+}
+
