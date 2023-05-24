@@ -56,6 +56,8 @@ private slots:
 
     void on_emplace_back_button_clicked();
 
+    void on_textEdit_copyAvailable(bool b);
+
 private:
     Ui::MainWindow *ui;
     DVector<int> vec1;

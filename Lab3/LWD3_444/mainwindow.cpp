@@ -205,3 +205,9 @@ void MainWindow::on_emplace_back_button_clicked()
     print1();
 }
 
+
+void MainWindow::on_textEdit_copyAvailable(bool b)
+{
+
+}
+
